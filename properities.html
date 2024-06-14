@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Properties</title>
+</head>
+<body>
+    <!-- <nav class="flex justify-between p-8 ">
+        <h1 class="text-blue-900 md:text-3xl text-lg font-bold"><i class='bx bxs-home-alt-2 md:text-3xl text-lg  font-bold text-black mr-2'></i>Luxey</h1>
+        <ul class="lg:flex hidden ml-44 items-center gap-10 text-black font-semibold text-lg">
+            <li class="hover:bg-blue-400 px-3 py-2 rounded hover:text-white"><a href="./ind.html">Home</a></li>
+            <li class=" bg-blue-400 px-3 py-2 rounded text-white "><a href="./pro.html">Properties</a></li>
+            <li class="hover:bg-blue-400 px-3 py-2 rounded hover:text-white"><a href="./abo.html">About Us</a></li>
+            <li class="text-black hover:bg-blue-400 px-3 py-2 rounded hover:text-white "><a href="./pri.html">Pricing</a></li>
+            <li class="hover:bg-blue-400 px-3 py-2 rounded hover:text-white"><a href="./con.html">Contact Us</a></li>
+        </ul>
+        <button class="bg-blue-600 text-white font-semibold md:text-lg px-3 py-2 rounded-full hover:bg-blue-400 hover:-translate-y-2 lg:ml-[16rem] ml-5">Post a property</button>
+        <i class='bx bx-menu text-3xl font-bold lg:hidden'></i>
+    </nav> -->
+
+    <header class="bg-white flex items-center justify-between mx-auto p-2 ">
+        <div class="text-[30px] font-bold ">
+            <h1> Luxey </h1>
+        </div>
+        <div id=""
+            class="nav-links duration-500 lg:static absolute bg-white left-0  lg:min-h-fit min-h-[25vh] w-full top-[-50%] lg:w-auto flex px-5">
+            <nav class="">
+                <ul class=" lg:flex text-[20px] font-bold gap-8 lg:flex-row flex-col  ">
+                    <li class="mt-2"><a href="index.html"
+                        class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Home</a>
+                    </li>
+                    <li class="mt-2"><a href="properities.html"
+                            class="bg-blue-600 text-white px-3 py-2 rounded-xl">Properties</a>
+                    </li>
+                    <li class="mt-2"><a href="./about.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">About Us</a>
+                    </li>
+                    <li class="mt-2"><a href="./price.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Pricing</a>
+                    </li>
+                    <li class="mt-2"><a href="./contact.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="bg-blue-400 px-4 py-4 rounded-lg font-bold">Post a Property</button>
+            <i onclick="onToggleMenu(this)" class='bx bx-menu lg:hidden text-[2rem]' name="menu"></i>
+        </div>
+    </header>
+
+   
+    
+
+    <div>
+        <h3 class="text-center text-xl text-blue-600 font-bold mt-10">PROPERTIES</h3>
+
+        <h1 class="md:text-6xl text-3xl text-center font-bold mt-5">Find Your Dream Home</h1>
+
+        <p class="text-center font-semibold md:text-lg text-xs ml-3 mt-5">Welcome to Luxey's Property Listings! Whether you're looking to buy, rent, or invest,</br> our extensive database of properties has something for everyone.</p>
+    </div>
+
+    <div class="bg-blue-400 lg:ml-24 md:ml-20 ml-4 mr-1 mt-7  text-center rounded-2xl lg:w-[80rem] md:w-[40rem]" >
+        <ul class="lg:flex   gap-16 text-black font-semibold text-xl lg:p-10 md:p-5 p-2" >
+            <li>Property Location</li>
+            <li class="">Property Type</li>
+            <li class="">Property category</li>
+            <input class="focus:outline-none items-center md:w-80 w-64 mt-4 lg:mt-0 border-2 border-black lg:mb-6 rounded-full" placeholder="Search location or property name"> <button class="bg-blue-600 text-white text-xl  mt-2 lg:mt-0 lg:mb-6 hover:-translate-y-2 font-semibold px-3 py-2 rounded-full">Search</button>
+        </ul>
+    </div>
+
+    <div>
+        <div class="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 md:p-10">
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house13.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Pinwood Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>123 Maple St, Brooklyn</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$2,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>2
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>1200sqft
+                <i class='bx bxs-car-garage ml-10'></i>1
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house16.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Downtown Loft Office</h2>
+                <h3 class="text-black font-bold lg:text-xl text-lg mt-2"><i class='bx bxs-map text-xl  text-blue-700 font-bold ml-3 mr-2  '></i>789 Central Ave, Manhattan</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$4,000</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>1
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>2500sqft
+                <i class='bx bxs-car-garage ml-10'></i>2
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house15.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Greenfield Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>321 Park Ln, Kensington</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$5,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>3
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>1800sqft
+                <i class='bx bxs-car-garage ml-10'></i>1
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house14.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Sunset Villa</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>456 Ocean Dr, Bondi</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$10,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>4
+                <i class='bx bxs-shower ml-10'></i>3
+                <i class='bx bx-shape-square ml-10'></i>3200sqft
+                <i class='bx bxs-car-garage ml-10'></i>2
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house12.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Midtown Office Plaza </h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>987 Business St, Canary</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$6,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>1
+                <i class='bx bxs-shower ml-10'></i>3
+                <i class='bx bx-shape-square ml-10'></i>3000sqft
+                <i class='bx bxs-car-garage ml-10'></i>5
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house7.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Skyline Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>135 High St, Soho</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$2,800/month</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>2
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>1100sqft
+                <i class='bx bxs-car-garage ml-10'></i>1
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house6.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Uptown Office Building</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>369 Commerce Ave, North</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$3,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>1
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>2200sqft
+                <i class='bx bxs-car-garage ml-10'></i>3
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house5.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Bayview Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>159 Seaside Blvd, Queens</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$15,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>3
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>1700sqft
+                <i class='bx bxs-car-garage ml-10'></i>2
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house1.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Lakeside House</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>654 Lakeview Rd, Mosman</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$20,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>5
+                <i class='bx bxs-shower ml-10'></i>4
+                <i class='bx bx-shape-square ml-10'></i>4000sqft
+                <i class='bx bxs-car-garage ml-10'></i>3
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house10.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Uptown Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>123 North St, Conchin</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$22,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>2
+                <i class='bx bxs-shower ml-10'></i>2
+                <i class='bx bx-shape-square ml-10'></i>1600sqft
+                <i class='bx bxs-car-garage ml-10'></i>1
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house9.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Newtown Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>65 South St, Hybrebad</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$30,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>4
+                <i class='bx bxs-shower ml-10'></i>3
+                <i class='bx bx-shape-square ml-10'></i>3600sqft
+                <i class='bx bxs-car-garage ml-10'></i>2
+                </div>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl mt-10 md:ml-10 ml-2 mr-2  lg:w-[25rem]  bg-white h-[31rem]">
+                <img class="md:w-[30rem] w-[30rem] h-[20rem] rounded-2xl" src="house11.webp">
+                <h2 class="text-2xl font-bold text-black ml-3 mt-4 hover:text-blue-700">Air Apartments</h2>
+                <h3 class="text-black font-bold text-xl mt-2"><i class='bx bxs-map text-xl text-blue-700 font-bold ml-3 mr-2  '></i>752 East St, Dubai</h3>
+                <h3 class="text-2xl font-bold ml-5 mt-3">$40,500</h3>
+                <hr>
+                <div class="flex justify-center items-center  p-3  ">
+                <i class='bx bxs-bed '></i>5
+                <i class='bx bxs-shower ml-10'></i>4
+                <i class='bx bx-shape-square ml-10'></i>4200sqft
+                <i class='bx bxs-car-garage ml-10'></i>3
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center text-4xl text-black font-bold mt-24">How it Works</h1>
+        <div class="lg:flex lg:justify-evenly md:grid md:grid-cols-2 grid grid-cols-1  md:ml-10 ml-10  mt-10 p-4   ">
+            <div class="bg-white border-2 border-black md:w-[20rem] mt-8 mr-12  md:block ">
+                <h1 class="bg-blue-300 inline-block px-3 py-2 rounded-xl md:mt-3    ">1</h1></br>
+                <i class='bx bxs-search  mt-3 ml-10 text-3xl font-bold text-blue-600 '></i><h2 class="text-black font-bold text-2xl mt-3 ml-5">Search</h2>
+                <p class="text-xl ml-5 font-semibold text-blue-600">Use our search form to enter your</br> criteria and explore our extensive</br> property listings.</p>
+            </div>
+
+            <div class="bg-white border-2 border-black md:w-[20rem] mt-8 mr-12">
+                <h1 class="bg-blue-300 inline-block px-3 py-2 rounded-xl md:mt-3    ">2</h1></br>
+                <i class='bx bx-filter mt-3 ml-10 text-3xl font-bold text-blue-600'></i><h2 class="text-black font-bold text-2xl mt-3 ml-5">Filter</h2>
+                <p class="text-xl ml-5 font-semibold text-blue-600">Apply advanced filters to narrow</br> down your options based on</br> specific features and preferences.</p>
+            </div>
+
+            <div class="bg-white border-2 border-black md:w-[20rem] mt-8 mr-12 ">
+                <h1 class="bg-blue-300 inline-block px-3 py-2 rounded-xl md:mt-3   ">3</h1></br>
+                <i class='bx bx-show-alt mt-3 ml-10 text-3xl font-bold text-blue-600'></i><h2 class="text-black font-bold text-2xl mt-3 ml-5">View</h2>
+                <p class="text-xl ml-5 font-semibold text-blue-600">Browse detailed property</br> descriptions, photos, and virtual</br> tours to find your dream home.</p>
+            </div>
+
+            <div class="bg-white border-2 border-black md:w-[20rem] mt-8 mr-12 ">
+                <h1 class="bg-blue-300 inline-block px-3 py-2 rounded-xl md:mt-3   ">4</h1></br>
+                <i class='bx bxs-contact mt-3 ml-10 text-3xl font-bold text-blue-600' ></i><h2 class="text-black font-bold text-2xl mt-3 ml-5">Contact</h2>
+                <p class="text-xl ml-5 font-semibold text-blue-600">Reach out to our experienced</br> agents for more information or to</br> schedule a viewing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-400 rounded-2xl mt-24 ml-5 p-5 md:mr-2 mr-3">
+        <div class="lg:flex">
+          <div>
+              <h1 class="text-black lg:text-4xl text-lg font-bold lg:mt-40 mt-20 ml-3">Ready to Find Your</br> Dream Home?</h1></br>   
+              <h3 class="text-white text-lg ml-3 font-semibold">Start your journey with Luxey today! Sign up for free and get</br> instant access to the best property listings.</h3></br>
+              <button class="bg-blue-600 text-white px-3 py-2 rounded-full mt-7 ml-6 hover:-translate-y-2">Get Started</button>
+          </div>
+      <div class="flex   justify-center">
+          <div class="sm:flex  lg:ml-56 lg:mt-40 mt-5 gap-10 ">
+              <img class="lg:w-96 h-96 border-2 border-white rounded-2xl" src="house10.webp"> 
+               <img class="lg:w-[20rem] ml-3 w-72 h-72 border-2 border-white rounded-2xl md:mt-28 mt-12 " src="house11.webp">
+          </div>
+          </div>
+        </div>
+    </div>
+
+        <div class="bg-blue-400 p-10 rounded-2xl mt-28 ml-4 md:mr-2 mr-3">
+            <div class="md:flex justify-evenly">
+            <div>
+              <h1 class="text-black lg:text-3xl md:text-lg text-xl mr-24 font-bold">Receive new property listings </br>straight in your inbox</h1>
+            </div>
+            <div>
+              <label class="block text-white text-lg font-bold mt-5 ">Subscribe to our newsletter</label>
+              <input class="border-2 border-black  hover:border-2 hover:border-white w-56 rounded-full " type="username" placeholder="Your email">  <button class="bg-white text-blue-500 px-3 py-2 rounded-full hover:bg-blue-500 hover:-translate-y-2 hover:text-white  ">Submit</button>
+            </div>
+            </div></br>
+            <hr>
+            <h1 class="text-white font-bold text-2xl mt-10 "><i class='bx bxs-home-alt-2 text-3xl mr-5'></i>Luxey</h1>
+            <div class="lg:flex sm:grid grid-cols-2 justify-between">
+              <div>
+                  <h1 class="text-black text-3xl font-bold mt-10">Main Pages</h1></br>
+                  <h3 class="text-white text-lg font-semibold hover:text-black">Home pages</h3>
+                  <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">About Us</h3>
+                  <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Agents</h3>
+                  <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Agent Smile</h3>
+                  <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">FAQs</h3>
+                  <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Contact Us</h3>
+              </div>
+             
+                  <div>
+                      <h2 class="text-white font-semibold text-lg mt-16 hover:text-black">Post a Property</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Property Single</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Type</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Location</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Category</h2>
+                  </div>
+          
+                  <div>
+                      <h2 class="text-white font-semibold text-lg mt-16 hover:text-black">Blogs</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Blog Category</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Blog Single</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing (without e-commerce)</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing Single</h2>
+                  </div>
+          
+                  <div>
+                      <h1  class="text-black text-3xl font-bold mt-14">Utility Pages</h1>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Style Guide</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">404 Page</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Password Protected</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Licenses</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Changelog</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">More Templates</h2>
+                  </div>
+          
+                  <div>
+                      <h1 class="text-black text-3xl font-bold mt-14">Contact</h1>
+                      <h2 class="text-white font-semibold text-lg mt-5 hover:text-black">contact@luxey.com</h2>
+                      <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">+1 (123) 4567890</h2>
+                  </div>
+          
+              </div></br>
+              <hr>
+              <div class="lg:flex justify-between mt-10">
+                  <div class="text-black text-xl mt-7 font-bold">
+                      <h1>©2024 Luxey, Inc. All rights reserved.</h1>
+                  </div>
+          
+                  <div class="text-black md:text-xl text-lg  mt-6 font-bold">
+                      <h1>Built by Versy Templates - Powered by <span class="text-white font-bold md:text-2xl sm:text-lg">Techbrain Networks</span></h1>
+                  </div>
+          
+                  <div class="text-black text-4xl md:mt-5 mt-4">
+                      <i class='bx bxl-instagram hover:-translate-y-2'></i>
+                      <i class='bx bxl-whatsapp-square  hover:-translate-y-2'></i>
+                      <i class='bx bxl-twitter  hover:-translate-y-2' ></i>
+                  </div>
+              </div>
+            </div>
+
+
+            <script>
+                const navLinks = document.querySelector('.nav-links')
+                function onToggleMenu(e) {
+                    e.name = e.name === 'menu' ? 'close' : 'menu'
+                    navLinks.classList.toggle('top-[9%]')
+                }
+            </script>
+</body>
+</html>

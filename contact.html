@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- <nav class="flex justify-between p-8 ">
+        <h1 class="text-blue-900 md:text-3xl text-lg font-bold"><i class='bx bxs-home-alt-2 md:text-3xl text-lg  font-bold text-black mr-2'></i>Luxey</h1>
+        <ul class="lg:flex hidden ml-44 items-center gap-10 text-black font-semibold text-lg">
+            <li class="hover:bg-blue-400 px-3 py-2 rounded hover:text-white"><a href="./ind.html">Home</a></li>
+            <li class=" hover:bg-blue-400 px-3 py-2 rounded hover:text-white "><a href="./pro.html">Properties</a></li>
+            <li class="hover:bg-blue-400 px-3 py-2 rounded hover:text-white"><a href="./abo.html">About Us</a></li>
+            <li class=" hover:bg-blue-400 px-3 py-2 rounded hover:text-white "><a href="./pri.html">Pricing</a></li>
+            <li class="bg-blue-400 px-3 py-2 rounded text-white"><a href="./con.html">Contact Us</a></li>
+        </ul>
+        <button class="bg-blue-600 text-white font-semibold md:text-lg px-3 py-2 rounded-full hover:bg-blue-400 hover:-translate-y-2 lg:ml-[16rem] ml-5">Post a property</button>
+        <i class='bx bx-menu text-3xl font-bold lg:hidden'></i>
+    </nav> -->
+
+    <header class="bg-white flex items-center justify-between mx-auto p-2 ">
+        <div class="text-[30px] font-bold ">
+            <h1> Luxey </h1>
+        </div>
+        <div id=""
+            class="nav-links duration-500 lg:static absolute bg-white left-0  lg:min-h-fit min-h-[25vh] w-full top-[-50%] lg:w-auto flex px-5">
+            <nav class="">
+                <ul class=" lg:flex text-[20px] font-bold gap-8 lg:flex-row flex-col  ">
+                    <li class="mt-2 "><a href="index.html"
+                        class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Home</a>
+                    </li>
+                    <li class="mt-2"><a href="properities.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Properties</a>
+                    </li>
+                    <li class="mt-2"><a href="./about.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">About Us</a>
+                    </li>
+                    <li class="mt-2"><a href="./price.html"
+                            class="hover:bg-blue-600 hover:text-white px-3 py-2 rounded-xl">Pricing</a>
+                    </li>
+                    <li class="mt-2"><a href="./contact.html"
+                            class="bg-blue-600 text-white px-3 py-2 rounded-xl">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <button class="bg-blue-400 px-4 py-4 rounded-lg font-bold">Post a Property</button>
+            <i onclick="onToggleMenu(this)" class='bx bx-menu lg:hidden text-[2rem]' name="menu"></i>
+        </div>
+    </header>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+    <div class="lg:flex justify-evenly">
+        <h1 class="md:text-4xl text-3xl  text-blue-600 mt-10 text-center font-bold ">Discover Your Dream</br > Home with Luxey</h1>
+        <h3 class="lg:text-xl mt-10 ml-3 text-xl text-center font-semibold text-black">Whether you're looking for a cozy apartment, a luxurious villa, or</br> a family-friendly house, we've got you covered.</h3></br>
+    </div>
+    <div class=" lg:text-center text-center lg:ml-[40rem]">
+    <button class="bg-blue-600 text-white px-3 rounded-full py-2  hover:bg-blue-400 hover:-translate-y-2">Explore Properties</button> <button class="bg-white ml-4 text-blue-600 px-3 py-2 rounded-full border-2 border-blue-600  hover:bg-blue-400 hover:-translate-y-2 hover:text-white">Talk to an agent</button>
+    </div>
+
+    <img class="lg:p-16 p-10  rounded-3xl" src="house.webp" alt="house">
+
+    <div class="text-center mt-16 bg-gray-300 p-5 ml-3 mr-3 rounded-2xl">
+        <h1 class="text-4xl font-bold text-black">Our Pillars of Excellence</h1>
+        <div class="md:flex md:justify-center md:gap-40 mt-16">
+            <div>
+            <h1 class="text-4xl font-bold text-black">100,000<span class="text-3xl text-blue-600 font-bold">+</span></h1>
+            <h2 class="text-lg font-bold text-blue-600 mt-2">Homes Purchased</h2>
+            </div>
+
+            <div>
+                <h1 class="text-4xl font-bold text-black mt-10 md:mt-0">200<span class="text-3xl text-blue-600 font-bold">+</span></h1>
+                <h2 class="text-lg font-bold text-blue-600  mt-2">Agents</h2>
+                </div>
+
+                <div>
+                    <h1 class="text-4xl font-bold text-black mt-10 md:mt-0">80,000<span class="text-3xl text-blue-600 font-bold">+</span></h1>
+                    <h2 class="text-lg font-bold text-blue-600  mt-2">Happy Clients</h2>
+                    </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-400 rounded-2xl mt-24 ml-5 p-5 md:mr-2 mr-3">
+        <div class="lg:flex">
+          <div>
+              <h1 class="text-black lg:text-4xl text-2xl font-bold lg:mt-40 mt-20 ml-3">Ready to Find Your Dream Home?</h1></br>   
+              <h3 class="text-white text-lg ml-3 font-semibold">Start your journey with Luxey today! Sign up for free and get</br> instant access to the best property listings.</h3></br>
+              <button class="bg-blue-600 text-white px-3 py-2 rounded-full mt-7 ml-6 hover:-translate-y-2">Get Started</button>
+          </div>
+      <div class="flex   justify-center">
+          <div class="sm:flex  lg:ml-56 lg:mt-40 mt-5 gap-10 ">
+              <img class="lg:w-96 h-96 border-2 border-white rounded-2xl" src="house10.webp"> 
+               <img class="lg:w-[20rem] ml-3 w-72 h-72 border-2 border-white rounded-2xl md:mt-28 mt-12 " src="house11.webp">
+          </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="bg-blue-400 p-10 rounded-2xl mt-28 ml-4 md:mr-2 mr-3">
+        <div class="md:flex justify-evenly">
+        <div>
+          <h1 class="text-black lg:text-3xl md:text-lg text-xl mr-24 font-bold">Receive new property listings </br>straight in your inbox</h1>
+        </div>
+        <div>
+          <label class="block text-white text-lg font-bold mt-5 ">Subscribe to our newsletter</label>
+          <input class="border-2 border-black  hover:border-2 hover:border-white w-56 rounded-full " type="username" placeholder="Your email">  <button class="bg-white text-blue-500 px-3 py-2 rounded-full hover:bg-blue-500 hover:-translate-y-2 hover:text-white  ">Submit</button>
+        </div>
+        </div></br>
+        <hr>
+        <h1 class="text-white font-bold text-2xl mt-10 "><i class='bx bxs-home-alt-2 text-3xl mr-5'></i>Luxey</h1>
+        <div class="lg:flex sm:grid grid-cols-2 justify-between">
+          <div>
+              <h1 class="text-black text-3xl font-bold mt-10">Main Pages</h1></br>
+              <h3 class="text-white text-lg font-semibold hover:text-black">Home pages</h3>
+              <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">About Us</h3>
+              <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Agents</h3>
+              <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Agent Smile</h3>
+              <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">FAQs</h3>
+              <h3 class="text-white text-lg font-semibold mt-3 hover:text-black">Contact Us</h3>
+          </div>
+         
+              <div>
+                  <h2 class="text-white font-semibold text-lg mt-16 hover:text-black">Post a Property</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Property Single</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Type</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Location</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Properties by Category</h2>
+              </div>
+      
+              <div>
+                  <h2 class="text-white font-semibold text-lg mt-16 hover:text-black">Blogs</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Blog Category</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Blog Single</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing (without e-commerce)</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Pricing Single</h2>
+              </div>
+      
+              <div>
+                  <h1  class="text-black text-3xl font-bold mt-14">Utility Pages</h1>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Style Guide</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">404 Page</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Password Protected</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Licenses</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">Changelog</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">More Templates</h2>
+              </div>
+      
+              <div>
+                  <h1 class="text-black text-3xl font-bold mt-14">Contact</h1>
+                  <h2 class="text-white font-semibold text-lg mt-5 hover:text-black">contact@luxey.com</h2>
+                  <h2 class="text-white font-semibold text-lg mt-3 hover:text-black">+1 (123) 4567890</h2>
+              </div>
+      
+          </div></br>
+          <hr>
+          <div class="lg:flex justify-between mt-10">
+              <div class="text-black text-xl mt-7 font-bold">
+                  <h1>©2024 Luxey, Inc. All rights reserved.</h1>
+              </div>
+      
+              <div class="text-black md:text-xl text-lg  mt-6 font-bold">
+                  <h1>Built by Versy Templates - Powered by <span class="text-white font-bold md:text-2xl sm:text-lg">Techbrain Networks</span></h1>
+              </div>
+      
+              <div class="text-black text-4xl md:mt-5 mt-4">
+                  <i class='bx bxl-instagram hover:-translate-y-2'></i>
+                  <i class='bx bxl-whatsapp-square  hover:-translate-y-2'></i>
+                  <i class='bx bxl-twitter  hover:-translate-y-2' ></i>
+              </div>
+          </div>
+        </div>
+    
+
+
+</body>
+</html>
